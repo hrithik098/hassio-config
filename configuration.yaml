@@ -29,7 +29,7 @@ mqtt:
 
 switch:
      - platform: mqtt
-       name: "Sense Box"
+       name: "Switch1"
        state_topic: "switch/1"
        command_topic: "switch/1"
        qos: 0
@@ -71,87 +71,87 @@ switch:
      
 sensor:
     - platform: mqtt
-      name: "Voltage"
+      name: "Voltage1"
       state_topic: "voltage/read1"
       unit_of_measurement: "V"
     
     - platform: mqtt
-      name: "Voltage"
+      name: "Voltage2"
       state_topic: "voltage/read2"
       unit_of_measurement: "V"
 
     - platform: mqtt
-      name: "Voltage"
+      name: "Voltage3"
       state_topic: "voltage/read3"
       unit_of_measurement: "V"
 
     - platform: mqtt
-      name: "Voltage"
+      name: "Voltage4"
       state_topic: "voltage/read4"
       unit_of_measurement: "V"
 
     - platform: mqtt
-      name: "Voltage"
+      name: "Voltage5"
       state_topic: "voltage/read5"
       unit_of_measurement: "V"
 
     - platform: mqtt
-      name: "Current"
+      name: "Current1"
       state_topic: "current/read1"
       unit_of_measurement: "A"
     
     - platform: mqtt
-      name: "Current"
+      name: "Current2"
       state_topic: "current/read2"
       unit_of_measurement: "A"
 
     - platform: mqtt
-      name: "Current"
+      name: "Current3"
       state_topic: "current/read3"
       unit_of_measurement: "A"
 
     - platform: mqtt
-      name: "Current"
+      name: "Current4"
       state_topic: "current/read4"
       unit_of_measurement: "A"
 
     - platform: mqtt
-      name: "Current"
+      name: "Current5"
       state_topic: "current/read5"
       unit_of_measurement: "A"
 
     - platform: mqtt
-      name: "energy"
+      name: "energy1"
       state_topic: "energy/read1"
       unit_of_measurement: "kWh"
     
     - platform: mqtt
-      name: "energy"
+      name: "energy2"
       state_topic: "energy/read2"
       unit_of_measurement: "kWh"
     
     - platform: mqtt
-      name: "energy"
+      name: "energy3"
       state_topic: "energy/read3"
       unit_of_measurement: "kWh"
 
     - platform: mqtt
-      name: "energy"
+      name: "energy4"
       state_topic: "energy/read4"
       unit_of_measurement: "kWh"
 
     - platform: mqtt
-      name: "energy"
+      name: "energy5"
       state_topic: "energy/read5"
       unit_of_measurement: "kWh"
 
     - platform: mqtt
-      name: "Outside Temp"
+      name: "OutsideTemp"
       state_topic: "temp/read1"
       unit_of_measurement: "C"
     
     - platform: mqtt
-      name: "Inside Temp"
+      name: "InsideTemp"
       state_topic: "temp/read2"
       unit_of_measurement: "C"
     
