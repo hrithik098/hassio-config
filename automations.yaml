@@ -1,0 +1,50 @@
+- id: '1588065349463'
+  alias: 'Switch off AC '
+  description: Switch off all AC except the one in common hall.
+  trigger: []
+  condition:
+  - after: '12:00'
+    before: '19:00'
+    condition: time
+  action:
+  - data: {}
+    entity_id: switch.switch2
+    service: switch.turn_off
+  - data: {}
+    entity_id: switch.switch3
+    service: switch.turn_off
+  - data: {}
+    entity_id: switch.switch4
+    service: switch.turn_off
+  - data: {}
+    entity_id: switch.switch5
+    service: switch.turn_off
+  - data:
+      title: Send an images
+      message: That's an example that sends an image.
+    service: notify.telegram
+- id: '1588343915727'
+  alias: Energy Level Indicator
+  description: Sends notification on sudden changes in energy levels.
+  trigger:
+  - above: '100'
+    below: '200'
+    entity_id: sensor.energy
+    platform: numeric_state
+  condition: []
+  action:
+  - data:
+      message: Your energy consumption has crossed a critical level.
+      title: Notification
+    service: telegram_bot.send_message
+- id: '1595423557529'
+  alias: Theme
+  description: Set custom theme at startup
+  trigger:
+  - event: start
+    platform: homeassistant
+  condition: []
+  action:
+  - data:
+      name: noctis
+    service: frontend.set_theme

@@ -1,0 +1,53 @@
+{
+    "data": {
+        "items": [
+            {
+                "id": "c8cdd59ae2b94b62b36534a2f45d92c9",
+                "type": "module",
+                "url": "/hacsfiles/weather-card/weather-card.js"
+            },
+            {
+                "id": "e467f5f4396f41ae88f2bdaa53a46dd2",
+                "type": "module",
+                "url": "/hacsfiles/lovelace-text-input-row/lovelace-text-input-row.js"
+            },
+            {
+                "id": "4fe8d868ed33459eacfcce66102ac2f9",
+                "type": "module",
+                "url": "/hacsfiles/mini-graph-card/mini-graph-card-bundle.js"
+            },
+            {
+                "id": "26a2f396972a44b0b41be4d85ced712a",
+                "type": "module",
+                "url": "/hacsfiles/logbook-card/logbook-card.js"
+            },
+            {
+                "id": "18b185d240eb455cacdc41c56bf38111",
+                "type": "module",
+                "url": "/hacsfiles/Home-Assistant-Lovelace-HTML-Jinja2-Template-card/html-template-card.js"
+            },
+            {
+                "id": "a2fe33e12ede4fc3bbaf63dbd18baa1d",
+                "type": "module",
+                "url": "/local/content-card.js"
+            },
+            {
+                "id": "484e2c9aa97a4093ad9962c86ab050df",
+                "type": "module",
+                "url": "/hacsfiles/bar-card/bar-card.js"
+            },
+            {
+                "id": "5901c7b054344ce8af70dea948258de8",
+                "type": "module",
+                "url": "/hacsfiles/lovelace-multiple-entity-row/multiple-entity-row.js"
+            },
+            {
+                "id": "8f54e75f9ec74e41a1bad704646859f2",
+                "type": "module",
+                "url": "/hacsfiles/custom-header/custom-header.js"
+            }
+        ]
+    },
+    "key": "lovelace_resources",
+    "version": 1
+}

@@ -1,0 +1,238 @@
+{
+    "data": {
+        "config": {
+            "custom_header": {
+                "disabled_mode": true,
+                "editor_warnings": false,
+                "hide_header": true
+            },
+            "title": "Switch ",
+            "views": [
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.energy",
+                                            "name": "Power"
+                                        },
+                                        {
+                                            "entity": "sensor.voltage",
+                                            "name": "Voltage"
+                                        },
+                                        {
+                                            "entity": "sensor.current",
+                                            "name": "Current"
+                                        }
+                                    ],
+                                    "entity": "switch.switch1",
+                                    "name": "AC1",
+                                    "state_color": true,
+                                    "toggle": true,
+                                    "type": "custom:multiple-entity-row"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.energy",
+                                            "name": "Power"
+                                        },
+                                        {
+                                            "entity": "sensor.voltage",
+                                            "name": "Total"
+                                        }
+                                    ],
+                                    "entity": "switch.switch2",
+                                    "name": "AC2",
+                                    "state_color": true,
+                                    "toggle": true,
+                                    "type": "custom:multiple-entity-row"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.energy",
+                                            "name": "Power"
+                                        },
+                                        {
+                                            "entity": "sensor.voltage",
+                                            "name": "Total"
+                                        }
+                                    ],
+                                    "entity": "switch.switch3",
+                                    "name": "AC3",
+                                    "state_color": true,
+                                    "toggle": true,
+                                    "type": "custom:multiple-entity-row"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.energy",
+                                            "name": "Power"
+                                        },
+                                        {
+                                            "entity": "sensor.voltage",
+                                            "name": "Total"
+                                        }
+                                    ],
+                                    "entity": "switch.switch4",
+                                    "name": "AC4",
+                                    "state_color": true,
+                                    "toggle": true,
+                                    "type": "custom:multiple-entity-row"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "sensor.energy",
+                                            "name": "Power"
+                                        },
+                                        {
+                                            "entity": "sensor.voltage",
+                                            "name": "Total"
+                                        }
+                                    ],
+                                    "entity": "switch.switch5",
+                                    "name": "AC5",
+                                    "state_color": true,
+                                    "toggle": true,
+                                    "type": "custom:multiple-entity-row"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "All nodes",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "automation.new_automation",
+                            "hold_action": {
+                                "action": "more-info"
+                            },
+                            "icon_height": "70px",
+                            "show_icon": true,
+                            "show_name": true,
+                            "tap_action": {
+                                "action": "toggle"
+                            },
+                            "type": "button"
+                        },
+                        {
+                            "content": "<style>\ntable, th, td {\nborder: 1px solid black;\nborder-collapse: collapse;\n}\nth, td {\npadding: 5px;\ntext-align: left;\n}\n</style>\n<table> <tr>\n  <th>Name</th>&nbsp&nbsp&nbsp\n  <th>Room Number</th>&nbsp&nbsp&nbsp\n  <th>Total cost incur per device</th>\n \n</tr> <tr>\n  <td style=\"text-align:center\">AC</td>\n  <td style=\"text-align:center\">101</td>\n  <td style=\"text-align:center\">\u20b9 {{ (((states('sensor.energy') | float)*50)/35)|round }}</td>\n</tr> <tr>\n  <td style=\"text-align:center\">AC</td>\n  <td style=\"text-align:center\">102</td>\n  <td style=\"text-align:center\">\u20b9 {{ (((states('sensor.energy') | float)*50)/8)|round  }}</td>\n</tr> <tr>\n  <td style=\"text-align:center\">AC</td>\n  <td style=\"text-align:center\">103</td>\n  <td style=\"text-align:center\">\u20b9 {{ (((states('sensor.energy') | float)*50)/7)|round  }}</td>\n</tr> <tr>\n  <td style=\"text-align:center\">AC</td>\n  <td style=\"text-align:center\">104</td>\n  <td style=\"text-align:center\">\u20b9 {{ (((states('sensor.energy') | float)*50)/2)|round  }}</td>\n</tr> <tr>\n  <td style=\"text-align:center\">AC</td>\n  <td style=\"text-align:center\">105</td>\n  <td style=\"text-align:center\">\u20b9 {{ (((states('sensor.energy') | float)*50)/21)|round }}</td>\n</tr> <tr>\n  <td style=\"text-align:center\">AC</td>\n  <td style=\"text-align:center\">106</td>\n  <td style=\"text-align:center\">\u20b9 {{ (((states('sensor.energy') | float)*50)/15)|round  }}</td></tr></table>",
+                            "ignore_line_breaks": true,
+                            "title": "Total billed per device",
+                            "type": "custom:html-template-card"
+                        },
+                        {
+                            "animation": {
+                                "state": "on"
+                            },
+                            "direction": "right",
+                            "entities": [
+                                {
+                                    "entity": "sensor.energy"
+                                }
+                            ],
+                            "max": 260,
+                            "min": 0,
+                            "severity": [
+                                {
+                                    "color": "green",
+                                    "from": "0",
+                                    "to": "30"
+                                },
+                                {
+                                    "color": "blue",
+                                    "from": "31",
+                                    "to": "140"
+                                },
+                                {
+                                    "color": "red",
+                                    "from": "141",
+                                    "to": "300"
+                                }
+                            ],
+                            "title": "Check your goal progress here:",
+                            "type": "custom:bar-card"
+                        },
+                        {
+                            "entity": "input_number.box1",
+                            "type": "entity",
+                            "unit": "\u20b9"
+                        },
+                        {
+                            "align_icon": "left",
+                            "align_state": "center",
+                            "entities": [
+                                {
+                                    "entity": "sensor.energy"
+                                }
+                            ],
+                            "name": "Energy Consumption",
+                            "type": "custom:mini-graph-card"
+                        },
+                        {
+                            "entity": "sensor.avgsense",
+                            "name": "Average energy consumption",
+                            "type": "entity"
+                        },
+                        {
+                            "entity": "sensor.yearlycost",
+                            "type": "entity"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.ac1"
+                                },
+                                {
+                                    "entity": "sensor.ac2"
+                                },
+                                {
+                                    "entity": "sensor.ac3"
+                                },
+                                {
+                                    "entity": "sensor.ac4"
+                                },
+                                {
+                                    "entity": "sensor.ac5"
+                                },
+                                {
+                                    "entity": "sensor.ac6"
+                                }
+                            ],
+                            "title": "Daily On time ",
+                            "type": "entities"
+                        },
+                        {
+                            "dark_mode": false,
+                            "entities": [
+                                {
+                                    "entity": "zone.home"
+                                }
+                            ],
+                            "hours_to_show": 0,
+                            "title": "Your property",
+                            "type": "map"
+                        },
+                        {
+                            "entity": "sensor.energy",
+                            "name": "Power Factor",
+                            "type": "entity",
+                            "unit": "PF"
+                        }
+                    ],
+                    "icon": "hass:robot",
+                    "path": "monitor",
+                    "theme": "noctis",
+                    "title": "Monitor"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

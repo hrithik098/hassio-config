@@ -1,0 +1,19 @@
+2020-07-23 16:46:59 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-07-23 16:47:02 ERROR (MainThread) [hacs] Could not set logging level to debug, logger is not enabled
+2020-07-23 16:47:02 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for average which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-07-23 16:47:13 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:47:19 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:47:30 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:47:39 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:47:49 WARNING (MainThread) [aiohttp.websocket] websocket connection is closing.
+2020-07-23 16:47:54 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:48:10 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:48:32 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:48:59 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:49:42 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:50:19 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:50:50 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:51:28 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:51:59 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:52:37 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)
+2020-07-23 16:53:08 ERROR (updater) [telegram.ext.updater] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running (409)

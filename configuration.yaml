@@ -1,0 +1,279 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+frontend:
+      themes: !include_dir_merge_named themes
+ 
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+
+
+mqtt:
+     broker: 127.0.0.1
+     port: 1883
+     discovery: true
+    #  discovery_prefix: homeassistant
+
+switch:
+     - platform: mqtt
+       name: "Sense Box"
+       state_topic: "switch/1"
+       command_topic: "switch/1"
+       qos: 0
+       payload_on : "on"
+       payload_off: "off"
+     
+     - platform: mqtt
+       name: "Switch2"
+       state_topic: "switch/2"
+       command_topic: "switch/2"
+       qos: 0
+       payload_on : "on"
+       payload_off: "off"
+
+     - platform: mqtt
+       name: "Switch3"
+       state_topic: "switch/3"
+       command_topic: "switch/3"
+       qos: 0
+       payload_on : "on"
+       payload_off: "off"
+
+     - platform: mqtt
+       name: "Switch4"
+       state_topic: "switch/4"
+       command_topic: "switch/4"
+       qos: 0
+       payload_on : "on"
+       payload_off: "off"
+
+     - platform: mqtt
+       name: "Switch5"
+       state_topic: "switch/5"
+       command_topic: "switch/5"
+       qos: 0
+       payload_on : "on"
+       payload_off: "off"
+
+     
+sensor:
+    - platform: mqtt
+      name: "Voltage"
+      state_topic: "voltage/read1"
+      unit_of_measurement: "V"
+    
+    - platform: mqtt
+      name: "Voltage"
+      state_topic: "voltage/read2"
+      unit_of_measurement: "V"
+
+    - platform: mqtt
+      name: "Voltage"
+      state_topic: "voltage/read3"
+      unit_of_measurement: "V"
+
+    - platform: mqtt
+      name: "Voltage"
+      state_topic: "voltage/read4"
+      unit_of_measurement: "V"
+
+    - platform: mqtt
+      name: "Voltage"
+      state_topic: "voltage/read5"
+      unit_of_measurement: "V"
+
+    - platform: mqtt
+      name: "Current"
+      state_topic: "current/read1"
+      unit_of_measurement: "A"
+    
+    - platform: mqtt
+      name: "Current"
+      state_topic: "current/read2"
+      unit_of_measurement: "A"
+
+    - platform: mqtt
+      name: "Current"
+      state_topic: "current/read3"
+      unit_of_measurement: "A"
+
+    - platform: mqtt
+      name: "Current"
+      state_topic: "current/read4"
+      unit_of_measurement: "A"
+
+    - platform: mqtt
+      name: "Current"
+      state_topic: "current/read5"
+      unit_of_measurement: "A"
+
+    - platform: mqtt
+      name: "energy"
+      state_topic: "energy/read1"
+      unit_of_measurement: "kWh"
+    
+    - platform: mqtt
+      name: "energy"
+      state_topic: "energy/read2"
+      unit_of_measurement: "kWh"
+    
+    - platform: mqtt
+      name: "energy"
+      state_topic: "energy/read3"
+      unit_of_measurement: "kWh"
+
+    - platform: mqtt
+      name: "energy"
+      state_topic: "energy/read4"
+      unit_of_measurement: "kWh"
+
+    - platform: mqtt
+      name: "energy"
+      state_topic: "energy/read5"
+      unit_of_measurement: "kWh"
+
+    - platform: mqtt
+      name: "Outside Temp"
+      state_topic: "temp/read1"
+      unit_of_measurement: "C"
+    
+    - platform: mqtt
+      name: "Inside Temp"
+      state_topic: "temp/read2"
+      unit_of_measurement: "C"
+    
+    - platform: history_stats
+      name: "AC1"
+      entity_id: switch.switch2
+      state: 'on'
+      type: time
+      start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+      end: '{{ now() }}'
+    
+    - platform: history_stats
+      name: "AC2"
+      entity_id: switch.switch3
+      state: 'on'
+      type: time
+      start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+      end: '{{ now() }}'
+    
+    - platform: history_stats
+      name: "AC3"
+      entity_id: switch.switch4
+      state: 'on'
+      type: time
+      start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+      end: '{{ now() }}'
+
+    - platform: history_stats
+      name: "AC4"
+      entity_id: switch.switch5
+      state: 'on'
+      type: time
+      start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+      end: '{{ now() }}'
+
+    - platform: history_stats
+      name: "AC5"
+      entity_id: switch.switch6
+      state: 'on'
+      type: time
+      start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+      end: '{{ now() }}'
+
+    - platform: history_stats
+      name: "AC6"
+      entity_id: switch.switch7
+      state: 'on'
+      type: time
+      start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+      end: '{{ now() }}'
+
+    # - platform: statistics
+    #   entity_id: sensor.AC3
+    #   name : Switch stat
+
+    - platform: average
+      name: 'avgsense'
+      duration:
+        days: 1
+      entities:
+      - sensor.energy
+    
+    # - platform: average
+    #   name: 'Average daily usage'
+    #   duration:
+    #     days: 1
+    #   entities:
+    #   - sensor.AC3
+
+    - platform: template
+      sensors: 
+          yearlycost:
+            friendly_name: "Yearly cost:"
+            unit_of_measurement: '₹'
+            value_template: "{{ ((states('sensor.avgsense')| float *  states('input_number.box1')| float) * 30)|round(2) }}"
+    
+    - platform: min_max
+      entity_ids:
+       - sensor.AC3
+      type: mean
+      name: Mean Living lux
+      round_digits: 2
+
+# utility_meter:
+#   sense_on_history:
+#     source: sensor.history_stats
+#     cycle: daily
+
+
+
+input_number:
+  box1:
+    name: Add per unit price in ₹
+    initial: 5  
+    min: 1
+    max: 15
+    step: 1
+    mode: box
+  
+  box2:
+    name: Choose
+    initial: 5  
+    min: 1
+    max: 260
+    step: 1
+    mode: box
+
+
+
+# Example configuration.yaml entry for the Telegram Bot
+telegram_bot:
+  - platform: polling
+    api_key: 1107230400:AAF4k3Tw0pJFaz3WZBsGt9riLCSIcNkdxcs
+    allowed_chat_ids:
+      - 542336205
+
+# Example configuration.yaml entry for the notifier
+notify:
+  - name: Hrithik
+    platform: telegram
+    chat_id: 542336205
+
+recorder:
+logbook:
+history:

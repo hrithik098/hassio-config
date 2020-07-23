@@ -1,0 +1,321 @@
+{
+    "data": [
+        {
+            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "homie",
+                    "id": "homie",
+                    "source": "person.homie",
+                    "user_id": "54434e9e986946c89ff6b454b94875d4"
+                },
+                "context": {
+                    "id": "c3d00a9b053b425296356c5c77e5768f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.homie",
+                "last_changed": "2020-07-23T11:17:00.256869+00:00",
+                "last_updated": "2020-07-23T11:17:00.256869+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "hrithik",
+                    "id": "hrithik",
+                    "source": "person.hrithik"
+                },
+                "context": {
+                    "id": "399c7faf0c7744ea9fc73dbf14bb156e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.hrithik",
+                "last_changed": "2020-07-23T11:17:00.257000+00:00",
+                "last_updated": "2020-07-23T11:17:00.257000+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Add per unit price in \u20b9",
+                    "initial": 5.0,
+                    "max": 15.0,
+                    "min": 1.0,
+                    "mode": "box",
+                    "step": 1.0
+                },
+                "context": {
+                    "id": "c0aaa4004466414b9004945f85a3b8a9",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.box1",
+                "last_changed": "2020-07-23T11:17:02.453467+00:00",
+                "last_updated": "2020-07-23T11:17:02.453467+00:00",
+                "state": "5.0"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Choose",
+                    "initial": 5.0,
+                    "max": 260.0,
+                    "min": 1.0,
+                    "mode": "box",
+                    "step": 1.0
+                },
+                "context": {
+                    "id": "fdbc6af4f626491c9794a3d0deed3d59",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.box2",
+                "last_changed": "2020-07-23T11:17:02.453532+00:00",
+                "last_updated": "2020-07-23T11:17:02.453532+00:00",
+                "state": "5.0"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "Sense"
+                },
+                "context": {
+                    "id": "4d73723ce7774c52a64ea1bcfcf0f9a3",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.sense",
+                "last_changed": "2020-07-23T11:17:02.548210+00:00",
+                "last_updated": "2020-07-23T11:17:02.548210+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch off AC ",
+                    "id": "1588065349463",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "2157ad4894d94967abd8ffaadd30bdf1",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.new_automation",
+                "last_changed": "2020-07-23T11:17:02.607087+00:00",
+                "last_updated": "2020-07-23T11:17:02.607087+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Energy Level Indicator",
+                    "id": "1588343915727",
+                    "last_triggered": "2020-07-23T10:34:46.517187+00:00"
+                },
+                "context": {
+                    "id": "5ba7dd1ab3614a48872b6d0a241d1ced",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.energy_level_indicator",
+                "last_changed": "2020-07-23T11:17:02.607237+00:00",
+                "last_updated": "2020-07-23T11:17:02.607237+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Theme",
+                    "id": "1595423557529",
+                    "last_triggered": "2020-07-23T06:43:40.702270+00:00"
+                },
+                "context": {
+                    "id": "be7fde071da94d999f2859003392f15d",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.theme",
+                "last_changed": "2020-07-23T11:17:02.607320+00:00",
+                "last_updated": "2020-07-23T11:17:02.607320+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Sense Box"
+                },
+                "context": {
+                    "id": "7b1f0336eaaa44cdbdb60eeff24d67d9",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.sense_box",
+                "last_changed": "2020-07-23T11:17:02.666649+00:00",
+                "last_updated": "2020-07-23T11:17:02.666649+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch2"
+                },
+                "context": {
+                    "id": "4017c128ab7e41ca86fe9f8dec7bd8ec",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.switch2",
+                "last_changed": "2020-07-23T11:17:02.693798+00:00",
+                "last_updated": "2020-07-23T11:17:02.693798+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch3"
+                },
+                "context": {
+                    "id": "963c711a596144198b814eaa5d39943a",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.switch3",
+                "last_changed": "2020-07-23T11:17:02.698700+00:00",
+                "last_updated": "2020-07-23T11:17:02.698700+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch4"
+                },
+                "context": {
+                    "id": "6d358a30b55840f5beae6515731d0d73",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.switch4",
+                "last_changed": "2020-07-23T11:17:02.699923+00:00",
+                "last_updated": "2020-07-23T11:17:02.699923+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch5"
+                },
+                "context": {
+                    "id": "b7887f2bf2a9473ab1575e3f339d0e00",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.switch5",
+                "last_changed": "2020-07-23T11:17:02.905725+00:00",
+                "last_updated": "2020-07-23T11:17:02.905725+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:16:49.642213+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch6"
+                },
+                "context": {
+                    "id": "3387f48c87a047d5845ae8a367184499",
+                    "parent_id": null,
+                    "user_id": "866ba9ce403542dbaf0d763bd66884b2"
+                },
+                "entity_id": "switch.switch6",
+                "last_changed": "2020-07-23T07:04:07.635759+00:00",
+                "last_updated": "2020-07-23T07:04:07.635759+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:16:49.642213+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch7"
+                },
+                "context": {
+                    "id": "66048d87dae54f3d9d6b8fa165dd2964",
+                    "parent_id": null,
+                    "user_id": "866ba9ce403542dbaf0d763bd66884b2"
+                },
+                "entity_id": "switch.switch7",
+                "last_changed": "2020-07-23T09:51:15.758469+00:00",
+                "last_updated": "2020-07-23T09:51:15.758469+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:16:49.642213+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch8"
+                },
+                "context": {
+                    "id": "e3d58c7234b6451bbbce8fa848128262",
+                    "parent_id": null,
+                    "user_id": "866ba9ce403542dbaf0d763bd66884b2"
+                },
+                "entity_id": "switch.switch8",
+                "last_changed": "2020-07-23T09:51:13.450108+00:00",
+                "last_updated": "2020-07-23T09:51:13.450108+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:16:49.642213+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch9"
+                },
+                "context": {
+                    "id": "9cab5e3ce8ff4198a58a2b97e811f84f",
+                    "parent_id": null,
+                    "user_id": "866ba9ce403542dbaf0d763bd66884b2"
+                },
+                "entity_id": "switch.switch9",
+                "last_changed": "2020-07-23T09:51:14.538770+00:00",
+                "last_updated": "2020-07-23T09:51:14.538770+00:00",
+                "state": "off"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}

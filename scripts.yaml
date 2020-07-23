@@ -1,0 +1,4 @@
+'1588065176663':
+  alias: Room
+  sequence:
+  - scene: scene.switch_off_room_ac

@@ -1,0 +1,16 @@
+{
+    "data": {
+        "users": [
+            {
+                "password": "JDJiJDEyJFc1RXVrTWdCQjN5UmpSNUJWdFpkeHU2b2xrVzFIWkc1ckF3R0NLTUJ5ako5c1ZuR2IyOC91",
+                "username": "nigga"
+            },
+            {
+                "password": "JDJiJDEyJEpKN1F5TWV4NGlMbGlGZ0VyMWNhOE8wYnBBOGliT04vV3lWdVFqNmRqRS5LT0dTUU5YUERp",
+                "username": "hrithik"
+            }
+        ]
+    },
+    "key": "auth_provider.homeassistant",
+    "version": 1
+}
