@@ -16,15 +16,15 @@
                                 {
                                     "entities": [
                                         {
-                                            "entity": "sensor.energy",
+                                            "entity": "sensor.energy1",
                                             "name": "Power"
                                         },
                                         {
-                                            "entity": "sensor.voltage",
+                                            "entity": "sensor.voltage1",
                                             "name": "Voltage"
                                         },
                                         {
-                                            "entity": "sensor.current",
+                                            "entity": "sensor.current1",
                                             "name": "Current"
                                         }
                                     ],
@@ -37,12 +37,16 @@
                                 {
                                     "entities": [
                                         {
-                                            "entity": "sensor.energy",
+                                            "entity": "sensor.energy2",
                                             "name": "Power"
                                         },
                                         {
-                                            "entity": "sensor.voltage",
-                                            "name": "Total"
+                                            "entity": "sensor.voltage2",
+                                            "name": "Voltage"
+                                        },
+                                        {
+                                            "entity": "sensor.current2",
+                                            "name": "Current"
                                         }
                                     ],
                                     "entity": "switch.switch2",
@@ -54,12 +58,16 @@
                                 {
                                     "entities": [
                                         {
-                                            "entity": "sensor.energy",
+                                            "entity": "sensor.energy3",
                                             "name": "Power"
                                         },
                                         {
-                                            "entity": "sensor.voltage",
+                                            "entity": "sensor.voltage3",
                                             "name": "Total"
+                                        },
+                                        {
+                                            "entity": "sensor.current3",
+                                            "name": "Current"
                                         }
                                     ],
                                     "entity": "switch.switch3",
@@ -71,12 +79,16 @@
                                 {
                                     "entities": [
                                         {
-                                            "entity": "sensor.energy",
+                                            "entity": "sensor.energy4",
                                             "name": "Power"
                                         },
                                         {
-                                            "entity": "sensor.voltage",
+                                            "entity": "sensor.voltage4",
                                             "name": "Total"
+                                        },
+                                        {
+                                            "entity": "sensor.current4",
+                                            "name": "Current5"
                                         }
                                     ],
                                     "entity": "switch.switch4",
@@ -88,12 +100,16 @@
                                 {
                                     "entities": [
                                         {
-                                            "entity": "sensor.energy",
+                                            "entity": "sensor.energy5",
                                             "name": "Power"
                                         },
                                         {
-                                            "entity": "sensor.voltage",
+                                            "entity": "sensor.voltage5",
                                             "name": "Total"
+                                        },
+                                        {
+                                            "entity": "sensor.current5",
+                                            "name": "Current5"
                                         }
                                     ],
                                     "entity": "switch.switch5",
@@ -133,7 +149,7 @@
                             "direction": "right",
                             "entities": [
                                 {
-                                    "entity": "sensor.energy"
+                                    "entity": "sensor.energy1"
                                 }
                             ],
                             "max": 260,
@@ -159,16 +175,11 @@
                             "type": "custom:bar-card"
                         },
                         {
-                            "entity": "input_number.box1",
-                            "type": "entity",
-                            "unit": "\u20b9"
-                        },
-                        {
                             "align_icon": "left",
                             "align_state": "center",
                             "entities": [
                                 {
-                                    "entity": "sensor.energy"
+                                    "entity": "sensor.energy1"
                                 }
                             ],
                             "name": "Energy Consumption",

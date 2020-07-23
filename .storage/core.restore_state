@@ -1,48 +1,46 @@
 {
     "data": [
         {
-            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "last_seen": "2020-07-23T15:39:52.001953+00:00",
             "state": {
                 "attributes": {
                     "editable": true,
                     "friendly_name": "homie",
                     "id": "homie",
-                    "source": "person.homie",
                     "user_id": "54434e9e986946c89ff6b454b94875d4"
                 },
                 "context": {
-                    "id": "c3d00a9b053b425296356c5c77e5768f",
+                    "id": "051117ba47204421b98ee74c12c9e9a3",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "person.homie",
-                "last_changed": "2020-07-23T11:17:00.256869+00:00",
-                "last_updated": "2020-07-23T11:17:00.256869+00:00",
+                "last_changed": "2020-07-23T13:24:38.333809+00:00",
+                "last_updated": "2020-07-23T13:24:46.105273+00:00",
                 "state": "unknown"
             }
         },
         {
-            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "last_seen": "2020-07-23T15:39:52.001953+00:00",
             "state": {
                 "attributes": {
                     "editable": true,
                     "friendly_name": "hrithik",
-                    "id": "hrithik",
-                    "source": "person.hrithik"
+                    "id": "hrithik"
                 },
                 "context": {
-                    "id": "399c7faf0c7744ea9fc73dbf14bb156e",
+                    "id": "32cc008503d6407a8ce69dcd6e87ae3d",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "person.hrithik",
-                "last_changed": "2020-07-23T11:17:00.257000+00:00",
-                "last_updated": "2020-07-23T11:17:00.257000+00:00",
+                "last_changed": "2020-07-23T13:24:38.333929+00:00",
+                "last_updated": "2020-07-23T13:24:46.105375+00:00",
                 "state": "unknown"
             }
         },
         {
-            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "last_seen": "2020-07-23T15:39:52.001953+00:00",
             "state": {
                 "attributes": {
                     "editable": false,
@@ -54,18 +52,18 @@
                     "step": 1.0
                 },
                 "context": {
-                    "id": "c0aaa4004466414b9004945f85a3b8a9",
+                    "id": "586c9acedbda49a88ffa3997943bd70e",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "input_number.box1",
-                "last_changed": "2020-07-23T11:17:02.453467+00:00",
-                "last_updated": "2020-07-23T11:17:02.453467+00:00",
+                "last_changed": "2020-07-23T13:24:39.835641+00:00",
+                "last_updated": "2020-07-23T13:24:39.835641+00:00",
                 "state": "5.0"
             }
         },
         {
-            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "last_seen": "2020-07-23T15:39:52.001953+00:00",
             "state": {
                 "attributes": {
                     "editable": false,
@@ -77,36 +75,36 @@
                     "step": 1.0
                 },
                 "context": {
-                    "id": "fdbc6af4f626491c9794a3d0deed3d59",
+                    "id": "0422b66793dd4983bfbf9c3b9918af87",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "input_number.box2",
-                "last_changed": "2020-07-23T11:17:02.453532+00:00",
-                "last_updated": "2020-07-23T11:17:02.453532+00:00",
+                "last_changed": "2020-07-23T13:24:39.835743+00:00",
+                "last_updated": "2020-07-23T13:24:39.835743+00:00",
                 "state": "5.0"
             }
         },
         {
-            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "last_seen": "2020-07-23T15:39:52.001953+00:00",
             "state": {
                 "attributes": {
                     "editable": true,
                     "friendly_name": "Sense"
                 },
                 "context": {
-                    "id": "4d73723ce7774c52a64ea1bcfcf0f9a3",
+                    "id": "6f9e2b7902d34125961a009b14bac41f",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "input_boolean.sense",
-                "last_changed": "2020-07-23T11:17:02.548210+00:00",
-                "last_updated": "2020-07-23T11:17:02.548210+00:00",
+                "last_changed": "2020-07-23T13:24:39.921734+00:00",
+                "last_updated": "2020-07-23T13:24:39.921734+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "last_seen": "2020-07-23T15:39:52.001953+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Switch off AC ",
@@ -114,18 +112,18 @@
                     "last_triggered": null
                 },
                 "context": {
-                    "id": "2157ad4894d94967abd8ffaadd30bdf1",
+                    "id": "fade9a83fb304930b7c36b2dc9b73d98",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.new_automation",
-                "last_changed": "2020-07-23T11:17:02.607087+00:00",
-                "last_updated": "2020-07-23T11:17:02.607087+00:00",
+                "last_changed": "2020-07-23T13:24:39.966485+00:00",
+                "last_updated": "2020-07-23T13:24:39.966485+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "last_seen": "2020-07-23T15:39:52.001953+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Energy Level Indicator",
@@ -133,37 +131,122 @@
                     "last_triggered": "2020-07-23T10:34:46.517187+00:00"
                 },
                 "context": {
-                    "id": "5ba7dd1ab3614a48872b6d0a241d1ced",
+                    "id": "0843b53d18dd4d9cb3273f97b8b4f99a",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.energy_level_indicator",
-                "last_changed": "2020-07-23T11:17:02.607237+00:00",
-                "last_updated": "2020-07-23T11:17:02.607237+00:00",
+                "last_changed": "2020-07-23T13:24:39.966599+00:00",
+                "last_updated": "2020-07-23T13:24:39.966599+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "last_seen": "2020-07-23T15:39:52.001953+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Theme",
                     "id": "1595423557529",
-                    "last_triggered": "2020-07-23T06:43:40.702270+00:00"
+                    "last_triggered": "2020-07-23T13:24:46.373731+00:00"
                 },
                 "context": {
-                    "id": "be7fde071da94d999f2859003392f15d",
+                    "id": "db2656e109ce4b75920fbd0d11f19f6d",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.theme",
-                "last_changed": "2020-07-23T11:17:02.607320+00:00",
-                "last_updated": "2020-07-23T11:17:02.607320+00:00",
+                "last_changed": "2020-07-23T13:24:39.966687+00:00",
+                "last_updated": "2020-07-23T13:24:46.373789+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-23T11:17:08.713066+00:00",
+            "last_seen": "2020-07-23T15:39:52.001953+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch1"
+                },
+                "context": {
+                    "id": "b27be2ad413441e68b47f8cdb264c920",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.switch1",
+                "last_changed": "2020-07-23T13:24:40.034820+00:00",
+                "last_updated": "2020-07-23T13:24:40.034820+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T15:39:52.001953+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch2"
+                },
+                "context": {
+                    "id": "7d9c3faa1b7e48539d02bfe36acf923f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.switch2",
+                "last_changed": "2020-07-23T13:24:40.070766+00:00",
+                "last_updated": "2020-07-23T13:24:40.070766+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T15:39:52.001953+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch3"
+                },
+                "context": {
+                    "id": "3c890457ba194a9e9d998a5c83b49a11",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.switch3",
+                "last_changed": "2020-07-23T13:24:40.082451+00:00",
+                "last_updated": "2020-07-23T13:24:40.082451+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T15:39:52.001953+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch4"
+                },
+                "context": {
+                    "id": "bf180e40275b4a6884dd340e94d5cf41",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.switch4",
+                "last_changed": "2020-07-23T13:24:40.087811+00:00",
+                "last_updated": "2020-07-23T13:24:40.087811+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T15:39:52.001953+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch5"
+                },
+                "context": {
+                    "id": "2a1ab16fded346c8b831f4bba7e74316",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.switch5",
+                "last_changed": "2020-07-23T13:24:40.088891+00:00",
+                "last_updated": "2020-07-23T13:24:40.088891+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-07-23T11:35:43.307326+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Sense Box"
@@ -176,74 +259,6 @@
                 "entity_id": "switch.sense_box",
                 "last_changed": "2020-07-23T11:17:02.666649+00:00",
                 "last_updated": "2020-07-23T11:17:02.666649+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-07-23T11:17:08.713066+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Switch2"
-                },
-                "context": {
-                    "id": "4017c128ab7e41ca86fe9f8dec7bd8ec",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.switch2",
-                "last_changed": "2020-07-23T11:17:02.693798+00:00",
-                "last_updated": "2020-07-23T11:17:02.693798+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-07-23T11:17:08.713066+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Switch3"
-                },
-                "context": {
-                    "id": "963c711a596144198b814eaa5d39943a",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.switch3",
-                "last_changed": "2020-07-23T11:17:02.698700+00:00",
-                "last_updated": "2020-07-23T11:17:02.698700+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-07-23T11:17:08.713066+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Switch4"
-                },
-                "context": {
-                    "id": "6d358a30b55840f5beae6515731d0d73",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.switch4",
-                "last_changed": "2020-07-23T11:17:02.699923+00:00",
-                "last_updated": "2020-07-23T11:17:02.699923+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-07-23T11:17:08.713066+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Switch5"
-                },
-                "context": {
-                    "id": "b7887f2bf2a9473ab1575e3f339d0e00",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.switch5",
-                "last_changed": "2020-07-23T11:17:02.905725+00:00",
-                "last_updated": "2020-07-23T11:17:02.905725+00:00",
                 "state": "off"
             }
         },

@@ -10,7 +10,7 @@
         "description": "Show multiple entity states and attributes on entity rows in Home Assistant's Lovelace UI",
         "domain": null,
         "domains": [],
-        "downloads": 3420,
+        "downloads": 3427,
         "file_name": "multiple-entity-row.js",
         "filename": "multiple-entity-row.js",
         "first_install": false,

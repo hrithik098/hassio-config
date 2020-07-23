@@ -208,11 +208,11 @@ sensor:
     #   name : Switch stat
 
     - platform: average
-      name: 'avgsense'
+      name: 'averageEnergy'
       duration:
         days: 1
       entities:
-      - sensor.energy
+      - sensor.energy2
     
     # - platform: average
     #   name: 'Average daily usage'
